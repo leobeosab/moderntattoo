@@ -4,18 +4,12 @@
 name = "Moderntattoo"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "Theme aimed at Tatto Artists built by Ryan Wise for BehindTheScenezTattooz"
 homepage = "http://example.com/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Ryan Wise"
+  homepage = "ryanwise.me"
