@@ -8,3 +8,6 @@ git clone https://github.com/leobeosab/moderntattoo
 cd examplesite
 hugo serve --themesDir ../../
 ```
+
+## Credits
+Gallery -> [addyosmani](https://codepen.io/addyosmani/pen/zYxVXPd)
