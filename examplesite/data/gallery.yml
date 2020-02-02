@@ -1,4 +1,5 @@
-ShowHeader: false
+ShowHeader: true
+DarkHeader: true
 Images: 
 - Name: g1.png 
   Alt: g1

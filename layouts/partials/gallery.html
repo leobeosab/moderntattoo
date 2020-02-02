@@ -1,12 +1,12 @@
 {{ if .ShowHeader }}
-<div class="gallery-header container">
+<div class="gallery-header container-fluid {{ (cond .DarkHeader "dark" "") }} ">
     <h2> Gallery </h2>
 </div>
 {{ end }}
 <div class="gallery-content container-fluid">
     <div class="gallery">
         {{ range .Images }}
-        <img src="/images/gallery/{{.Name}}" alt="{{.Alt}}" width="100%" height="auto" class="gallery-img" />		
+            <img src="/images/gallery/{{.Name}}" alt="{{.Alt}}" width="100%" height="auto" class="gallery-img" />		
         {{ end }} 
     </div>
 </div>
