@@ -69,10 +69,34 @@ h1, h2, h3 {
     }
 }
 
-.container.artists {
+.container-fluid.testimonials {
+    margin: 50px auto;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #testimonialcarousel {
+        .testimonial h3 {
+            font-size: 2rem;
+        }
+
+        .testimonial p {
+            margin-bottom: 5px;
+        }
+
+        .testimonial {
+            text-align: center;
+        }
+    }
+}
+
+.container-fluid.artists {
     background: #333;
 }
 
-.test {
-  height: 3000px;
+.container-fluid.footer {
+    height: 300px;
+    background: #0f0f0f;
 }
