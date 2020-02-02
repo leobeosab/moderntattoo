@@ -3,32 +3,20 @@
         <h1>Testimonials</h1>
           <div id="testimonialcarousel" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
-			<li data-target="#testimonialcarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#testimonialcarousel" data-slide-to="1"></li>
-			<li data-target="#testimonialcarousel" data-slide-to="2"></li>
+            {{ range $index, $testimonial := .Testimonials }} 
+            <li data-target="#testimonialcarousel" data-slide-to="{{$index}}" class="{{ (cond (eq $index 0) "active" "") }}"></li>
+            {{ end }} 
 		  </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            {{ range $index, $testimonial := .Testimonials }} 
+            <div class="carousel-item {{ (cond (eq $index 0) "active" "") }}">
                 <div class="testimonial">
-                    <h3> Ryan Wise </h3>
-                    <p> "Great shop love the prices" </p>
-                    <p class="date"> January 23rd 2019 </p>
+                    <h3> {{ $testimonial.Customer }} </h3>
+                    <p> "{{ $testimonial.Quote }}" </p>
+                    <p class="date"> {{ $testimonial.Date }} </p>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="testimonial">
-                    <h3> Ryan Wise </h3>
-                    <p> Great shop love the prices </p>
-                    <p class="date"> January 23rd 2019 </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="testimonial">
-                    <h3> Ryan Wise </h3>
-                    <p> Great shop love the prices </p>
-                    <p class="date"> January 23rd 2019 </p>
-                </div>
-            </div>
+            {{ end }} 
           </div>
         </div>
     </div>
