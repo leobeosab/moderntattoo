@@ -134,10 +134,14 @@ h1, h2, h3 {
 
 .container-fluid#artists {
     background: #0f0f0f;
-    margin-bottom: 100px;
+    padding: 20px 30px;
+    margin-bottom: 100px; //TODO: remove this later
+
+    .artist-gallery {
+        padding: 1vw;
+    }
     
     * { color: #fff; } 
-
 }
 
 .container-fluid.footer {

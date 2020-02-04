@@ -19,8 +19,8 @@ $gallerybackground: #0f0f0f;
 .gallery-content {
     padding: 50px 5px;
     background: $gallerybackground;
-
-	.gallery {
+}
+.gallery {
       -webkit-column-count: 4;
       -moz-column-count: 4;
       column-count: 4;
@@ -108,4 +108,4 @@ $gallerybackground: #0f0f0f;
         width: 200px;
       }
     }
-}
+
