@@ -1,0 +1,40 @@
+Artists:
+-   Name: Matt Maldonado
+    Slug: matt
+    About:   Praesent ut nunc eget erat tempor tincidunt vitae id est. Quisque ornare placerat velit at fringilla. Sed in sagittis nisi. Sed et libero ullamcorper, cursus orci sit amet, ultricies metus. Nam ultricies nulla condimentum, sodales massa sed, placerat eros. Fusce in eros fringilla, aliquam turpis a, ornare nulla. Suspendisse pretium non leo non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat eget ante interdum. 
+    PortraitImageName: Matt.jpg
+    Images:
+        - Name: M3.jpg
+          Alt: Ugh
+        - Name: M4.jpg
+          Alt: Ugh
+        - Name: M1.jpg
+          Alt: Ugh
+        - Name: M14.jpg
+          Alt: Ugh
+        - Name: M17.jpg
+          Alt: Ugh
+        - Name: M15.jpg
+          Alt: Ugh
+        - Name: M18.jpg
+          Alt: Ugh
+
+-   Name: Britta 
+    Slug: britta
+    About:   Praesent ut nunc eget erat tempor tincidunt vitae id est. Quisque ornare placerat velit at fringilla. Sed in sagittis nisi. Sed et libero ullamcorper, cursus orci sit amet, ultricies metus. Nam ultricies nulla condimentum, sodales massa sed, placerat eros. Fusce in eros fringilla, aliquam turpis a, ornare nulla. Suspendisse pretium non leo non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat eget ante interdum. 
+    PortraitImageName: Britta.jpg
+    Images:
+        - Name: B3.jpg
+          Alt: Ugh
+        - Name: B4.jpg
+          Alt: Ugh
+        - Name: B1.jpg
+          Alt: Ugh
+        - Name: B14.jpg
+          Alt: Ugh
+        - Name: B17.jpg
+          Alt: Ugh
+        - Name: B15.jpg
+          Alt: Ugh
+        - Name: B18.jpg
+          Alt: Ugh

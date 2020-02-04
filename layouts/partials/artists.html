@@ -1,36 +1,31 @@
 <div class="artist-selector container-fluid">
     <h1> Our Artists </h1>
     <nav>
-        <a href="#matt" data-toggle="collapse" class="artist-link">Matt</a>
-        <a href="#britta" data-toggle="collapse" class="artist-link collapsed">Britta</a>
+        {{ range $index, $artist := .Artists }}
+            <a href="#{{$artist.Slug }}" data-toggle="collapse" class="artist-link {{ (cond (eq $index 0) "" "collapsed") }} ">{{$artist.Name}}</a>
+        {{ end }}
     </nav>
 </div>
 <div id="artists" class="container-fluid">
-    <div id="matt" class="artist-about collapse show" data-parent="#artists">
+    {{ range $index, $artist := .Artists }}
+    <div id="{{$artist.Slug}}" class="artist-about collapse {{ (cond (eq $index 0) "show" "") }}" data-parent="#artists">
         <div class="row">
             <div class="col-sm-6">
-                <h3> Matt Maldono </h3>
-                <img class="img-fluid" alt="Matt" src="/images/artists/matt/Matt.jpg" />
+                <h3> {{$artist.Name }} </h3>
+                <img class="img-fluid" alt="{{$artist.Name}} image" src="/images/artists/{{$artist.Slug}}/{{ $artist.PortraitImageName }}"/>
             </div>
             <div class="col-sm-6">
-                <h5> About Matt </h5>
-                <p>  Praesent ut nunc eget erat tempor tincidunt vitae id est. Quisque ornare placerat velit at fringilla. Sed in sagittis nisi. Sed et libero ullamcorper, cursus orci sit amet, ultricies metus. Nam ultricies nulla condimentum, sodales massa sed, placerat eros. Fusce in eros fringilla, aliquam turpis a, ornare nulla. Suspendisse pretium non leo non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat eget ante interdum. </p>
+                <h5> About </h5>
+                <p> {{$artist.About}} </p>
                 <div class="artist-gallery gallery">
-                    <img src="/images/artists/matt/M3.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M1.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M15.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M4.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M14.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M18.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M7.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
-                    <img src="/images/artists/matt/M19.jpg" alt="eh" width="100%" height="auto" class="gallery-img" />		
+                {{ range $img := .Images }}
+                    <img src="/images/artists/{{$artist.Slug}}/{{$img.Name}}" alt="{{$img.Alt}}" width="100%" height="auto" class="gallery-img" />		
+                {{ end }}
                 </div>
             </div>
         </div>
     </div>
-    <div id="britta" class="artist-about collapse" data-parent="#artists">
-        <p> britta </p>
-    </div>
+    {{ end }}
 </div>
 <script>
     function setupArtistSelector() {
