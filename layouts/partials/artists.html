@@ -1,3 +1,25 @@
-<div class="artists container container-fluid">
-    
+<div class="artist-selector container-fluid">
+    <nav>
+        <a href="#matt" data-toggle="collapse" class="artist-link"> Matt </a>
+        <a href="#britta" data-toggle="collapse" class="artist-link collapsed"> Britta </a>
+    </nav>
 </div>
+<div id="artists" class="container-fluid">
+    <div id="matt" class="artist-about collapse show" data-parent="#artists">
+        <p> matt </p>
+    </div>
+    <div id="britta" class="artist-about collapse" data-parent="#artists">
+        <p> britta </p>
+    </div>
+</div>
+<script>
+    function setupArtistSelector() {
+        jQuery('.artist-link').on('click', function (event) {
+            if (!event.target.classList.contains('collapsed')) {
+                event.stopPropagation();
+                event.preventDefault();
+            }
+        });
+    }
+    setTimeout(setupArtistSelector, 1);
+</script>
