@@ -2,7 +2,7 @@
     <h1> Our Artists </h1>
     <nav>
         {{ range $index, $artist := .Artists }}
-            <a href="#{{$artist.Slug }}" data-toggle="collapse" class="artist-link {{ (cond (eq $index 0) "" "collapsed") }} ">{{$artist.Name}}</a>
+        <a href="#{{$artist.Slug }}" data-toggle="collapse" class="artist-link {{ (cond (eq $index 0) "" "collapsed") }}" aria-controls="{{$artist.Slug}}" aria-expanded="{{ (cond (eq $index 0) "true" "false") }}">{{$artist.Name}}</a>
         {{ end }}
     </nav>
 </div>
