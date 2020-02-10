@@ -94,6 +94,7 @@ h1, h2, h3 {
 
     .testimonial  {
         text-align: center;
+        height: 125px;
 
         h3 {
             font-size: 2rem;
@@ -171,7 +172,7 @@ h1, h2, h3 {
     .contact-form {
         .form-control:focus {
             box-shadow: none;
-            border-color: #0f0f0f;
+            border-color: #2f2f2f;
         }
 
         .form-control {
