@@ -1,0 +1,38 @@
+<div class="contact container-fluid">
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+            <h1> Contact Us </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 offset-sm-0 col-lg-4 offset-lg-2">
+            <div class="row">
+                <div class="col-sm-12"><h5> Hours </h5></div>
+                <div class="hours col-sm-12">
+                    <div class="day-time">
+                        <div class="day">Sunday-Monday</div>
+                        <div class="time">Closed</div>
+                    </div>
+                    <div class="day-time">
+                        <div class="day">Tuesday-Friday</div>
+                        <div class="time">Closed</div>
+                    </div>
+                    <div class="day-time">
+                        <div class="day">Saturday</div>
+                        <div class="time">Closed</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row location">
+                <div class="col-sm-12"><h5> Location </h5></div>
+                <div class="col-sm-12"><p class="address">52 E. Main Ave. Zeeland, MI 49464</p></div>
+                <div class="col-sm-12">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2926.877309422008!2d-86.01906948412088!3d42.81207867915921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819935e7bf24153%3A0x172e9ea932c0c51!2s52%20E%20Main%20Ave%2C%20Zeeland%2C%20MI%2049464!5e0!3m2!1sen!2sus!4v1581319125935!5m2!1sen!2sus" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 offset-sm-0 col-lg-4 offset-lg-2">
+            {{ partial "contactform.html" . }}
+        </div>
+    </div>
+</div>
