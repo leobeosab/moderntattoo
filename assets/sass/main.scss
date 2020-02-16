@@ -194,6 +194,7 @@ h1, h2, h3 {
 .container-fluid.faq {
     padding: 20px 30px;
 
+
     .question {
         padding: 15px;
 
@@ -205,6 +206,10 @@ h1, h2, h3 {
             margin-top: 10px;
         }
     }
+}
+
+.header {
+    margin: 35px 0px;
 }
 
 .container-fluid.footer {
