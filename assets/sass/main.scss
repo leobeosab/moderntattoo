@@ -72,7 +72,7 @@ h1, h2, h3 {
 }
 
 .container-fluid.testimonials {
-    margin: 35px 0 85px 0;
+    margin-bottom: 85px;
 
     h1 {
         text-align: center;
@@ -208,8 +208,8 @@ h1, h2, h3 {
     }
 }
 
-.header {
-    margin: 35px 0px;
+.row.header {
+    padding: 35px 0px;
 }
 
 .container-fluid.footer {

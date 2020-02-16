@@ -2,9 +2,8 @@ $gallerybackground: #0f0f0f;
 
 .gallery-header {
     text-align: center;
-    padding: 25px 0 25px 0;
 
-    h2 { margin: 0; }
+    h1 { margin: 0; }
 
     &.dark {
         background: $gallerybackground;

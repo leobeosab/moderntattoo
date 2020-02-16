@@ -1,23 +1,29 @@
 <div class="container-fluid testimonials">
-    <div class="col-sm-10 offset-sm-1">
-        <h1>Testimonials</h1>
-          <div id="testimonialcarousel" class="carousel slide" data-ride="carousel">
-		  <ol class="carousel-indicators">
-            {{ range $index, $testimonial := .Testimonials }} 
-            <li data-target="#testimonialcarousel" data-slide-to="{{$index}}" class="{{ (cond (eq $index 0) "active" "") }}"></li>
-            {{ end }} 
-		  </ol>
-          <div class="carousel-inner">
-            {{ range $index, $testimonial := .Testimonials }} 
-            <div class="carousel-item {{ (cond (eq $index 0) "active" "") }}">
-                <div class="testimonial">
-                    <h3> {{ $testimonial.Customer }} </h3>
-                    <p> "{{ $testimonial.Quote }}" </p>
-                    <p class="date"> {{ $testimonial.Date }} </p>
+    <div class="row header">
+        <div class="col-sm-10 offset-sm-1">
+            <h1>Testimonials</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+              <div id="testimonialcarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                {{ range $index, $testimonial := .Testimonials }} 
+                <li data-target="#testimonialcarousel" data-slide-to="{{$index}}" class="{{ (cond (eq $index 0) "active" "") }}"></li>
+                {{ end }} 
+              </ol>
+              <div class="carousel-inner">
+                {{ range $index, $testimonial := .Testimonials }} 
+                <div class="carousel-item {{ (cond (eq $index 0) "active" "") }}">
+                    <div class="testimonial">
+                        <h3> {{ $testimonial.Customer }} </h3>
+                        <p> "{{ $testimonial.Quote }}" </p>
+                        <p class="date"> {{ $testimonial.Date }} </p>
+                    </div>
                 </div>
+                {{ end }} 
+              </div>
             </div>
-            {{ end }} 
-          </div>
         </div>
     </div>
 </div>

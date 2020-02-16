@@ -1,6 +1,10 @@
 {{ if .ShowHeader }}
 <div class="gallery-header container-fluid {{ (cond .DarkHeader "dark" "") }} ">
-    <h2> Gallery </h2>
+    <div class="row header">
+        <div class="col-sm-10 offset-sm-1">
+            <h1> Gallery </h1>
+        </div>
+    </div>
 </div>
 {{ end }}
 <div class="gallery-content container-fluid">
