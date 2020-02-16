@@ -11,6 +11,94 @@
     <label for="messageinput">Message</label>
     <textarea class="form-control" id="messageinput" rows="4"></textarea>
   </div>
-  <p> TODO add image upload </p>
-  <button type="submit" class="btn btn-dark">Contact</button>
+  <div class="form-group">
+    <input type="file" class="form-control-file" id="imageinput" accept=".jpeg,.png,.jpg,.gif" />
+    <label for="imageinput">Upload your idea or theme</label>
+    <div class="upload-accepts"> Accepts (.jpg, .jpeg, .png, .gif ) </div>
+  </div>
+  <button id="contact-submit" type="submit" class="btn btn-dark">Contact</button>
 </form>
+<script>
+function awsSendEmail (subject, body, imageName, image) {
+	return fetch('https://ebwyj779ma.execute-api.us-west-2.amazonaws.com/prod/send-mail', {
+	 method: 'POST',
+	 headers: {
+		'Accept': 'application/json',
+		'Content-Type': 'application/json'
+	 },
+	 body: JSON.stringify({ subject: subject, body: body, imageName: imageName, image: image })
+	})
+}
+
+function checkForEmptyInput(queryString) {
+	var inputList = jQuery(queryString);
+	var error = false;
+
+	for (var i = 0; i < inputList.length; i++) {
+		if (inputList[i].value.length == 0) {
+			error = true;
+			$(inputList[i]).addClass("error");
+		} else {
+			$(inputList[i]).removeClass("error");
+		}
+	}
+
+	return error;
+}
+
+function fileToBase64String (file) {
+	return new Promise(function (resolve, reject) {
+		var fr = new FileReader();
+		fr.onload = function() {
+			resolve(fr.result.split(',')[1]);
+		}
+		fr.onerror = function(error) {
+			alert("Could not read file, try again");
+			resolve(null);
+		}
+		fr.readAsDataURL(file);
+	});
+}
+
+function setupContactForm() {
+    // Update filename / accepts field
+    jQuery('#imageinput').on('change', function(e) {
+            var fileName = e.target.value.split('\\').pop();
+            if (fileName) {
+                    $("#imageinput + label").html(fileName);
+            }
+    });
+
+    // Validate + send email on careers page
+    jQuery("#contact-submit").click(function (e) {
+            e.preventDefault();
+
+            var error = checkForEmptyInput("#nameinput, #emailinput, #messageinput");
+            var resumeInput = $("#imageinput")[0];
+            if (resumeInput.files.length === 0 || !resumeInput.files[0]) {
+                    error = true;
+                    alert("Please attach an image :)");
+            }
+
+            if (error == false) {
+                    $('#contact-submit').attr({
+                            'disabled': 'true'
+                    });
+                    $('#contact-submit').html("Sending...");
+
+                    var subject = "Tattoo Request For: " + $("#nameinput").val();
+                    var body = $("#messageinput").val() + "<br/><br/>" + "Email back at: " + $("#emailinput").val();
+                    var resumeName = resumeInput.files[0].name;
+
+                    fileToBase64String(resumeInput.files[0]).then(function(data) {
+                            awsSendEmail(subject, body, resumeName, data).then(function() {
+                                    $("#contact-submit").html("Sent!")
+                            });
+                    });
+            }
+    });
+
+}
+setTimeout(setupContactForm, 1);
+
+</script>
