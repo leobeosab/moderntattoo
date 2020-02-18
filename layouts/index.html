@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
     {{ partial "head.html" . }}
-    <body>
+    <body data-spy="scroll" data-target="#main-nav" data-offset="100">
         {{ partial "nav.html" . }}
         {{ partial "hero.html" . }}
         {{ partial "aboutus.html" .Site.Data.about }}

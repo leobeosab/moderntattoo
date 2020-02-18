@@ -9,6 +9,10 @@ $dark-background: #0f0f0f;
     text-align: center;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
   background: #fff;
   font-family: $regular-font;

@@ -1,11 +1,57 @@
+@mixin transparent {
+    background-color: rgba(0,0,0,0);
+    .navbar-toggler span { color: #fff !important }
+    #navSupport .navbar-nav a { color: #ccc !important; }
+    #navSupport .navbar-nav a {
+        &:hover, &.active { color: #fff !important; }
+    } 
+    .navbar-brand { color: #fff !important; }
+
+    @media screen and (max-width: 767px) {
+        &.menu-shown {
+            background: #0f0f0f !important;
+        }
+    }
+}
+
 #main-nav {
+    padding: 15px 30px;
     position: fixed;
     z-index: 100;
     width: 100%;
+    transition: background-color .3s;
+
+    &.bg-transparent {
+        @include transparent;
+    }
 
     #navSupport {
-        li {
+        li a {
+            color: #666;
+            transition: color .3s;
+        }
+
+        li a.active {
             color: #000;
         }
     }
+
+    .navbar-toggler {
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .navbar-brand {
+        @include header;
+        font-size: 1.5rem;
+    }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -75px;
 }

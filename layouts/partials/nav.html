@@ -1,28 +1,45 @@
-<nav id="main-nav" class="navbar navbar-light bg-light navbar-expand-md">
+<nav id="main-nav" class="navbar navbar-dark bg-transparent navbar-expand-md">
     <a class="navbar-brand" href="#">Needle Me</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupport" aria-controls="navSupport" aria-expanded="false" aria-label="toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupport" onclick="document.getElementById('main-nav').classList.toggle('menu-shown')" aria-controls="navSupport" aria-expanded="false" aria-label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navSupport">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about_anchor">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="#gallery_anchor">Gallery</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#testimonials">Testimonials</a>
+                <a class="nav-link" href="#testimonials_anchor">Testimonials</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#artists">Artists</a>
+                <a class="nav-link" href="#artists_anchor">Artists</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact_anchor">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#faq">FAQ</a>
+                <a class="nav-link" href="#faq_anchor">FAQ</a>
             </li>
         </ul>
     </div>
 </nav>
+<script>
+    var nav = document.getElementById('main-nav');
+
+    window.onscroll = function() {
+        if (document.documentElement.scrollTop >= 50) {
+            nav.classList.remove("bg-transparent");
+            nav.classList.remove("navbar-dark");
+            nav.classList.add("bg-light");
+            nav.classList.add("navbar-light");
+        } else {
+            nav.classList.remove("bg-light");
+            nav.classList.remove("navbar-light");
+            nav.classList.add("navbar-dark");
+            nav.classList.add("bg-transparent");
+        }
+    }
+</script>

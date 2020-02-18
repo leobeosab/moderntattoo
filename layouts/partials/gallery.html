@@ -1,3 +1,4 @@
+<a class="anchor" id="gallery_anchor"></a>
 {{ if .ShowHeader }}
 <div class="gallery-header container-fluid {{ (cond .DarkHeader "dark" "") }} ">
     <div class="row header">
@@ -7,7 +8,7 @@
     </div>
 </div>
 {{ end }}
-<div class="gallery-content container-fluid">
+<div id="gallery" class="gallery-content container-fluid">
     <div class="gallery">
         {{ range .Images }}
             <img src="/images/gallery/{{.Name}}" alt="{{.Alt}}" width="100%" height="auto" class="gallery-img" />		
