@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{ partial "head.html" . }}
     <body>
+        {{ partial "nav.html" . }}
         {{ partial "hero.html" . }}
         {{ partial "aboutus.html" .Site.Data.about }}
         {{ partial "gallery.html" .Site.Data.gallery }}
