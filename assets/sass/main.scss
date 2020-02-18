@@ -29,6 +29,14 @@ h1, h2, h3 {
     @include header;
 }
 
+@mixin mobile-spacing {
+    @media screen and (max-width: 767px) {
+        .col-md-6:first-of-type, .col-sm-6:first-of-type {
+            margin-bottom: 35px !important;
+        }
+    }
+}
+
 @import 'nav';
 @import 'gallery';
 @import 'contact';
@@ -66,6 +74,7 @@ h1, h2, h3 {
 }
 
 .container-fluid.about-us {
+    @include mobile-spacing;
     margin-bottom: 50px;
 
     p {
@@ -141,6 +150,8 @@ h1, h2, h3 {
 }
 
 .container-fluid#artists {
+    @include mobile-spacing;
+
     background: $dark-background;
     padding: 20px 30px;
 
@@ -153,6 +164,7 @@ h1, h2, h3 {
 
 .container-fluid.faq {
     padding: 20px 30px;
+    margin-bottom: 35px;
 
 
     .question {
