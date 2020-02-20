@@ -1,7 +1,8 @@
 Artists:
--   Name: Matt Maldonado
+-   Name: Matt
+    FullName: Matt Maldonado
     Slug: matt
-    About:   Praesent ut nunc eget erat tempor tincidunt vitae id est. Quisque ornare placerat velit at fringilla. Sed in sagittis nisi. Sed et libero ullamcorper, cursus orci sit amet, ultricies metus. Nam ultricies nulla condimentum, sodales massa sed, placerat eros. Fusce in eros fringilla, aliquam turpis a, ornare nulla. Suspendisse pretium non leo non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat eget ante interdum. 
+    About:   Hey there, the name is Matt Maldonado and I have been in the art game since I could pick up a pencil. I am from the West Michigan area, Zeeland being where I came from. I am a tattoo artist who specializes in color or black and gray portraits/realism. Although that is my specialty my strengths also lie in color, pop-culture, Japanese and lettering. On top of tattooing I dabble in many other art forms such as graphic design, comic book illustration and digital or traditional illustration/painting. I’m super nerdy, super creative and hoping you choose me to make your next tattoo come to life! Stan Lee said it best...Excelsior!
     PortraitImageName: Matt.jpg
     Images:
         - Name: M3.jpg
@@ -19,9 +20,10 @@ Artists:
         - Name: M18.jpg
           Alt: Ugh
 
--   Name: Britta 
+-   Name: Britta
+    FullName: Britta Lindemulder
     Slug: britta
-    About:   Praesent ut nunc eget erat tempor tincidunt vitae id est. Quisque ornare placerat velit at fringilla. Sed in sagittis nisi. Sed et libero ullamcorper, cursus orci sit amet, ultricies metus. Nam ultricies nulla condimentum, sodales massa sed, placerat eros. Fusce in eros fringilla, aliquam turpis a, ornare nulla. Suspendisse pretium non leo non accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat eget ante interdum. 
+    About:  My name is Britta Lindemulder and I’ve been tattooing in West Michigan since 2018. Ever since I can remember, I’ve always loved to draw. Many of my childhood friends still have doodles I made them. Growing up, my biggest influences were dinosaurs, sic-fi movies, video games and nature; which are still my interests today. I enjoy tattooing stylized illustrative linework, black and gray along with brightly colored pieces. My hair is also brightly colored, so you’ll never lose me in a crowd! I’m always learning and love to experiment with new art styles and subjects. I draw caricatures, illustrate and paint. My favorite thing about tattooing is collaborating with my clients to bring their ideas to life. I look forward to working with you and helping to make your tattoo dreams come true! 
     PortraitImageName: Britta.jpg
     Images:
         - Name: B3.jpg

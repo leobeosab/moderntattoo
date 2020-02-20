@@ -12,7 +12,7 @@
     <div id="{{$artist.Slug}}" class="artist-about collapse {{ (cond (eq $index 0) "show" "") }}" data-parent="#artists">
         <div class="row">
             <div class="col-sm-6 col-lg-4 offset-lg-2 offset-sm-0">
-                <h3> {{$artist.Name }} </h3>
+                <h3> {{$artist.FullName }} </h3>
                 <img class="img-fluid" alt="{{$artist.Name}} image" src="/images/artists/{{$artist.Slug}}/{{ $artist.PortraitImageName }}"/>
             </div>
             <div class="col-sm-6 col-lg-4">
