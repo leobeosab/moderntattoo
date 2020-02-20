@@ -10,18 +10,12 @@
             <div class="row">
                 <div class="col-sm-12"><h5> Hours </h5></div>
                 <div class="hours col-sm-12">
-                    <div class="day-time">
-                        <div class="day">Sunday-Monday</div>
-                        <div class="time">Closed</div>
-                    </div>
-                    <div class="day-time">
-                        <div class="day">Tuesday-Friday</div>
-                        <div class="time">Closed</div>
-                    </div>
-                    <div class="day-time">
-                        <div class="day">Saturday</div>
-                        <div class="time">Closed</div>
-                    </div>
+                    {{ range .Schedule }}
+                        <div class="day-time">
+                            <div class="day">{{ .Day }}</div>
+                            <div class="time">{{ .Hours }}</div>
+                        </div>
+                    {{ end }}
                 </div>
             </div>
             <div class="row location">

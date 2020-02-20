@@ -10,5 +10,18 @@ git clone https://github.com/leobeosab/moderntattoo
 hugo serve
 ```
 
+## TODO
+###### Hero
+* Needs to remove parralax scrolling on mobile using javascript or else the image is blurry
+* Maybe a larger hero?
+
+###### Artists
+* Formatting
+* Social media links
+
+###### Footer
+* Social media links
+* Copyright
+
 ## Credits
 Gallery -> [addyosmani](https://codepen.io/addyosmani/pen/zYxVXPd)
