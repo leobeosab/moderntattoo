@@ -5,8 +5,7 @@ A hugo theme aimed at tattoo artists built for a friend
 
 ```
 git clone https://github.com/leobeosab/moderntattoo
-cd examplesite
-hugo serve --themesDir ../../
+hugo serve
 ```
 
 ## Credits
