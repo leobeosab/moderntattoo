@@ -11,20 +11,29 @@
     {{ range $index, $artist := .Artists }}
     <div id="{{$artist.Slug}}" class="artist-about collapse {{ (cond (eq $index 0) "show" "") }}" data-parent="#artists">
         <div class="row">
-            <div class="col-sm-6 col-lg-4 offset-lg-2 offset-sm-0">
-                <h3> {{$artist.FullName }} </h3>
-                <img class="img-fluid" alt="{{$artist.Name}} image" src="/images/artists/{{$artist.Slug}}/{{ $artist.PortraitImageName }}"/>
+            <div class="col-sm-6 my-auto col-lg-4 offset-lg-2 offset-sm-0">
+                <h3 class="artist-name"> {{$artist.FullName }} </h3>
+                <div class="artist-img m-auto">
+                    <img class="img-fluid" alt="{{$artist.Name}} image" src="/images/artists/{{$artist.Slug}}/{{ $artist.PortraitImageName }}"/>
+                </div>
             </div>
-            <div class="col-sm-6 col-lg-4">
-                <h5> About </h5>
-                <p> {{$artist.About}} </p>
+            <div class="col-sm-6 my-auto col-lg-4">
+                <div class="artist-about">
+                    <h5> About </h5>
+                    <p> {{$artist.About}} </p>
+                </div>
+            </div>
+        </div>
+        <div class="row social-links">
+            <div class="col-sm-12 col-md-8 col-lg-4 offset-sm-0 offset-md-2 offset-lg-4">
+
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-lg-8 offset-lg-2 offset-sm-0">
                 <div class="artist-gallery gallery">
                 {{ range $img := .Images }}
-                    <img src="/images/artists/{{$artist.Slug}}/{{$img.Name}}" alt="{{$img.Alt}}" width="100%" height="auto" class="gallery-img" />		
+                    <img src="/images/artists/{{$artist.Slug}}/{{$img.Name}}" alt="{{$img.Alt}}" width="100%" height="auto" class="gallery-img" />
                 {{ end }}
                 </div>
             </div>

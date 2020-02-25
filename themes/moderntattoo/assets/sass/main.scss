@@ -68,6 +68,10 @@ h1, h2, h3 {
     &.logo {
         background: transparent;
         box-shadow: none;
+
+        @media screen and (max-width: 767px) {
+            padding: 0;
+        }
     }
 
     .content {
@@ -160,6 +164,18 @@ h1, h2, h3 {
 
     background: $dark-background;
     padding: 20px 30px;
+
+    .artist-img {
+        @media screen and (min-width: 1200px) {
+            max-width: 80%;
+        }
+    }
+
+    .artist-about {
+        @media screen and (min-width: 767px) {
+            padding: 20px 0;
+        }
+    }
 
     .artist-gallery {
         margin: 35px 0;
