@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{ partial "head.html" . }}
     <body data-spy="scroll" data-target="#main-nav" data-offset="100">
-        {{ partial "nav.html" . }}
+        {{ partial "nav.html" .Site.Data.nav }}
         {{ partial "hero.html" .Site.Data.hero }}
         {{ partial "aboutus.html" .Site.Data.about }}
         {{ partial "gallery.html" .Site.Data.gallery }}

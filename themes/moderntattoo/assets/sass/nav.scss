@@ -5,7 +5,10 @@
     #navSupport .navbar-nav a {
         &:hover, &.active { color: #fff !important; }
     } 
-    .navbar-brand { color: #fff !important; }
+    .navbar-brand { 
+        color: #fff !important; 
+        filter: invert(1);
+    }
 
     @media screen and (max-width: 767px) {
         &.menu-shown {
@@ -47,6 +50,10 @@
     .navbar-brand {
         @include header;
         font-size: 1.5rem;
+
+        img {
+            max-width: 80px;
+        }
     }
 }
 

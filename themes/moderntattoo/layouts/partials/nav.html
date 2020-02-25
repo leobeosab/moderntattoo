@@ -1,5 +1,11 @@
 <nav id="main-nav" class="navbar navbar-dark bg-transparent navbar-expand-md">
-    <a class="navbar-brand" href="#">Needle Me</a>
+    {{ if .ShowImage }}
+    <a class="navbar-brand" href="#">
+        <img class="img-fluid" src="{{ .BrandImage }}" alt="{{ .BrandText }}" />
+    </a>
+    {{ else }}
+    <a class="navbar-brand" href="#">{{ .BrandText }}</a>
+    {{ end }}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navSupport" onclick="document.getElementById('main-nav').classList.toggle('menu-shown')" aria-controls="navSupport" aria-expanded="false" aria-label="toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

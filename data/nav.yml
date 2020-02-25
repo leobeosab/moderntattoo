@@ -1,0 +1,5 @@
+ShowImage: true
+BrandImage: images/nav/brand.png
+## If show image is false brand text will be shown
+## If show image is not false it is still the alt text so fill it out
+BrandText: BTST
