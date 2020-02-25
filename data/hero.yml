@@ -1,0 +1,5 @@
+ShowLogo: true
+LogoImage: images/hero/logo.png 
+# If logo is false, it shows a header and description
+Header: Behind The Scenez Tattooz
+Description: Some description

@@ -63,6 +63,11 @@ h1, h2, h3 {
     background: #fff;
     box-shadow: 0px 0px 3px 0px #666;
     border-radius: 1px;
+    
+    &.logo {
+        background: transparent;
+        box-shadow: none;
+    }
 
     .content {
       position: relative;
