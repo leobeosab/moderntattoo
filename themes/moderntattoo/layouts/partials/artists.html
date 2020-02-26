@@ -25,8 +25,22 @@
             </div>
         </div>
         <div class="row social-links">
-            <div class="col-sm-12 col-md-8 col-lg-4 offset-sm-0 offset-md-2 offset-lg-4">
-
+            <div class="col-sm-12 col-md-8 offset-sm-0">
+                {{ if $artist.Website }}
+                <a class="artist-link" href="{{ .Website }}" target="_blank"><i class="fas fa-link"></i></a>
+                {{ end }}
+                {{ if $artist.Instagram }}
+                <a class="artist-link" href="{{ .Instagram }}" target="_blank"><i class="fab fa-instagram"></i></a>
+                {{ end }}
+                {{ if $artist.Twitter }}
+                <a class="artist-link" href="{{ .Twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+                {{ end }}
+                {{ if $artist.Facebook }}
+                <a class="artist-link" href="{{ .Facebook }}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                {{ end }}
+                {{ if $artist.Youtube }}
+                <a class="artist-link" href="{{ .Youtube }}" target="_blank"><i class="fab fa-youtube"></i></a>
+                {{ end }}
             </div>
         </div>
         <div class="row">

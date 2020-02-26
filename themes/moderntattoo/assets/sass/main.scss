@@ -169,11 +169,31 @@ h1, h2, h3 {
         @media screen and (min-width: 1200px) {
             max-width: 80%;
         }
+
+        @media screen and (min-width: 1500px) {
+            max-width: 65%;
+        }
     }
 
     .artist-about {
         @media screen and (min-width: 767px) {
             padding: 20px 0;
+        }
+    }
+
+    .social-links {
+        margin-top: 35px;
+        display: flex;
+        place-content: center;
+        text-align: center;
+
+        a {
+            padding: .75em;
+            background: #222;
+            border-radius: 50%;
+            font-size: 1.25em;
+            margin: 0 15px;
+            i { width: 25px; text-align: center; }
         }
     }
 
