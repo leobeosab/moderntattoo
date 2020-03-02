@@ -40,6 +40,7 @@ h1, h2, h3 {
 @import 'nav';
 @import 'gallery';
 @import 'contact';
+@import 'footer';
 
 .hero-area {
   position: relative;
@@ -232,7 +233,3 @@ h1, h2, h3 {
     padding: 35px 0px;
 }
 
-.container-fluid.footer {
-    height: 300px;
-    background: $dark-background;
-}

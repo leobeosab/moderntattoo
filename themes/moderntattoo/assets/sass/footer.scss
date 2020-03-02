@@ -1,0 +1,21 @@
+.container-fluid.footer {
+    position: relative;
+    background: $dark-background;
+    padding: 50px 0;
+}
+
+.footer-content {
+    * { text-align: center; }
+    h6 { 
+        color: #fff;
+    }
+    .design-attribution a {
+        color: #888;
+        transition: color .3s;
+        text-decoration: none !important;
+
+        &:hover {
+            color: #aaa;
+        }
+    }
+}
