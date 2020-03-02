@@ -3,6 +3,8 @@ languageCode = "en-US"
 title = "Behind The Scenez Tattooz"
 theme = "moderntattoo"
 
+copyright = "© 2020 Behind The Scenez Tattooz"
+
 [deployment]
 
 [[deployment.targets]]
