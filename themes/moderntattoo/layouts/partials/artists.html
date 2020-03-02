@@ -47,7 +47,7 @@
             <div class="col-sm-12 col-lg-8 offset-lg-2 offset-sm-0">
                 <div class="artist-gallery gallery">
                 {{ range $img := .Images }}
-                    <img src="/images/artists/{{$artist.Slug}}/{{$img.Name}}" alt="{{$img.Alt}}" width="100%" height="auto" class="gallery-img" />
+                <img src="/images/artists/{{$artist.Slug}}/{{$img.Name}}" alt="{{$artist.Name}}'s {{$img.Alt}}" width="100%" height="auto" class="gallery-img" />
                 {{ end }}
                 </div>
             </div>
