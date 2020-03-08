@@ -1,25 +1,21 @@
 ShowHeader: true
 DarkHeader: true
 Images: 
-- Name: g1.png 
-  Alt: g1
-- Name: g2.png 
-  Alt: g2
-- Name: g3.png 
-  Alt: g3
-- Name: g4.png 
-  Alt: g4
-- Name: g5.png 
-  Alt: g6
-- Name: g7.png 
-  Alt: g8
-- Name: g9.png 
-  Alt: g9
-- Name: g10.png 
-  Alt: g10
-- Name: g11.png 
-  Alt: g11
-- Name: g12.png 
-  Alt: g12
-- Name: g13.png
-  Alt: g13
+- Name: matt_britta_boolin.jpg 
+  Alt: Matt and Britta booling
+- Name: britta_tattooing.jpg
+  Alt: Britta tattooing
+- Name: matt_tattooing.jpg
+  Alt: Matt tatooing
+- Name: shop_wide.jpg 
+  Alt: Shop overview
+- Name: matt_tattooing_britta.jpg
+  Alt: Matt tattooing Britta
+- Name: artist_stations.jpg
+  Alt: Artist Stations
+- Name: accent_wall.jpg
+  Alt: Shop accent wall
+- Name: inner_door.jpg
+  Alt: Inner entrance
+- Name: outside_door.jpg
+  Alt: Outside Door
