@@ -29,6 +29,13 @@
     }
 
     #navSupport {
+        justify-content: space-between;
+        .social-nav {
+            li a {
+                font-size: 1.5rem;
+            }
+        }
+
         li a {
             color: #666;
             transition: color .3s;
