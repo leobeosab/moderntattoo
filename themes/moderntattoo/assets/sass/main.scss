@@ -194,7 +194,7 @@ h1, h2, h3 {
 
         @media screen and (max-width: 767px) {
             font-size: 12px;
-            a div { margin: 0 .5em; }
+            a div { margin: 0 .5em !important; }
         }
 
         a div {
